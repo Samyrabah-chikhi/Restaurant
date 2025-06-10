@@ -4,13 +4,14 @@ import logo from "../Assets/pizzaLogo.png";
 import hero from "../Assets/hero-bg.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import OrderButton from "../OrderButton";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(0);
   const MenuList = ["HOME", "MENU", "ABOUT", "BOOK TABLE"];
   return (
     <div
-      className="flex justify-around shadow-sm text-gray-200  bg-red-950"
+      className="flex justify-around shadow-sm text-gray-200 z-10"
       style={{ backgroundImage: `url(${hero})`, backgroundSize: "cover" }}
     >
       <div className="flex items-center gap-2.5">
@@ -32,11 +33,7 @@ function Navbar() {
         })}
       </ul>
       <div className="flex items-center mr-[5%] ">
-        <Link to="/order">
-          <button className="w-40 h-14 bg-amber-400 active:bg-amber-400 hover:bg-amber-600 hover:text-gray-300 transition duration-300 cursor-pointer rounded-4xl">
-            Order Now
-          </button>
-        </Link>
+        <OrderButton></OrderButton>
       </div>
     </div>
   );

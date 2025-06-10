@@ -1,40 +1,37 @@
 import ListItems from "./ListItems";
 
 import logo from "../Assets/pizzaLogo.png";
-import cart from "../Assets/cart_icon.png";
+import hero from "../Assets/hero-bg.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [underlinedIndex, setUnderlinedIndex] = useState(0);
+  const [isActive, setIsActive] = useState(0);
   const MenuList = ["HOME", "MENU", "ABOUT", "BOOK TABLE"];
   return (
-    <div className="flex justify-around shadow-sm bg-blue-950 text-gray-200  bg-linear-to-r from-neutral-950 to-neutral-600">
+    <div
+      className="flex justify-around shadow-sm text-gray-200  bg-red-950"
+      style={{ backgroundImage: `url(${hero})`, backgroundSize: "cover" }}
+    >
       <div className="flex items-center gap-2.5">
-        <img src={logo} alt="" className="w-1/5"/>
-        <p className="font-semibold text-4xl">PizzApp</p>
+        <img src={logo} alt="" className="w-1/5" />
+        <Link to="/">
+          <p className="font-semibold text-4xl cursor-pointer">PizzApp</p>
+        </Link>
       </div>
-      <ul className="flex items-center lg:gap-12  text-xl font-medium">
+      <ul className="flex items-center lg:gap-12  text-xl font-medium mr-[5%]">
         {MenuList.map((Item, index) => {
-          if (underlinedIndex == index)
-            return (
-              <ListItems
-                name={Item}
-                key={index}
-                firstLink={true}
-                setUnderlinedIndex={() => setUnderlinedIndex(index)}
-              />
-            );
           return (
             <ListItems
               name={Item}
               key={index}
-              setUnderlinedIndex={() => setUnderlinedIndex(index)}
+              isActive={index == isActive}
+              setIsActive={() => setIsActive(index)}
             />
           );
         })}
       </ul>
-      <div className="relative flex items-center gap-11">
+      <div className="flex items-center mr-[5%] ">
         <Link to="/order">
           <button className="w-40 h-14 bg-amber-400 active:bg-amber-400 hover:bg-amber-600 hover:text-gray-300 transition duration-300 cursor-pointer rounded-4xl">
             Order Now

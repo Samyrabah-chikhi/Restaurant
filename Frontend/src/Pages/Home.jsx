@@ -9,7 +9,7 @@ export default function Home() {
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
-    <div className="m-[5%]">
+    <div className="m-[5%] text-white ">
       <img src={hero} className="absolute top-0 left-0 z-[-1]" />
       <div className=" flex flex-col justify-center max-w-1/2 gap-4">
         <h1 className="text-5xl">Fast Food Restaurant</h1>

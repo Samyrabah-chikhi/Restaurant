@@ -1,6 +1,7 @@
 import OrderButton from "../Components/OrderButton";
 import hero from "../Components/Assets/hero-bg.jpg";
 import { useState } from "react";
+
 export default function Home() {
   const descriptions = [
     "More than just a pizza place — we’re your neighborhood food haven. Come hungry and leave happy with cheesy classics, juicy burgers, and sweet endings that’ll have you coming back for more.",

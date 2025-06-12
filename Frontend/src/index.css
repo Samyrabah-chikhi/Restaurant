@@ -4,3 +4,22 @@ body{
     color:#000000;
     background-color:rgb(255, 255, 255);
 }
+
+@keyframes blockAppear {
+    from{
+        margin: 25px;
+        filter: brightness(10%);
+        transform: scale(110%);
+    }
+    to{
+        margin: 0px;
+        filter: brightness(100%);
+        transform: scale(100%);
+    }
+}
+
+.Block{
+    animation: blockAppear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}

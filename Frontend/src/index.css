@@ -7,9 +7,10 @@ body{
 
 @keyframes blockAppear {
     from{
-        margin: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
         filter: brightness(10%);
-        transform: scale(110%);
+        transform: scale(105%);
     }
     to{
         margin: 0px;

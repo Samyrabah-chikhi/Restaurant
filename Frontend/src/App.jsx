@@ -1,4 +1,5 @@
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Pages/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -19,6 +20,7 @@ function App() {
           
           <Route path="/booktable" element={<BookTable />} />
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );

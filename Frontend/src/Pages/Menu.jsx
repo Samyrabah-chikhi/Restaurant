@@ -49,7 +49,7 @@ export default function Menu() {
   ];
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <div className="mt-[4%] flex flex-col gap-12 items-center justify-center text-black">
+    <div className="mt-[4%] flex flex-col gap-12 items-center justify-center text-black mb-16">
       <h1 className="text-5xl font-bold text-black">Our Menu</h1>
       <div className="flex lg:gap-[2%] justify-center font-normal text-lg ">
         {categories.map((category, index) => {

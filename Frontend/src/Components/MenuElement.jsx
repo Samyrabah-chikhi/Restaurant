@@ -3,7 +3,7 @@ import React from "react";
 export default function MenuElement({ food }) {
   return (
     <div className="Block mb-4 w-[350px] h-[400px] bg-gray-800 text-white rounded-xl flex flex-col overflow-hidden">
-      <div className="h-1/2 bg-gray-200 flex justify-center items-center rounded-bl-4xl">
+      <div className="ImageBlock h-1/2 flex justify-center items-center rounded-bl-4xl">
         <img
           src={food.image}
           alt={food.title}

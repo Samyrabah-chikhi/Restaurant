@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-body{
-    color:#000000;
-    background-color:rgb(255, 255, 255);
+body {
+  color: #000000;
+  background-color: rgb(255, 255, 255);
 }
 
 @keyframes blockAppear {
-    from{
-        margin-left: 20px;
-        margin-right: 20px;
-        filter: brightness(10%);
-        transform: scale(105%);
-    }
-    to{
-        margin: 0px;
-        filter: brightness(100%);
-        transform: scale(100%);
-    }
+  from {
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: scale(105%);
+  }
+  to {
+    margin: 0px;
+    transform: scale(100%);
+  }
 }
 
-.Block{
-    animation: blockAppear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+.Block {
+  animation: blockAppear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.ImageBlock {
+  background-color: rgb(117, 148, 209);
+}
+
+.Logo a svg {
+  height: 24px;
+}
+
+.Logo a {
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.Logo a:hover {
+  fill: red;
 }

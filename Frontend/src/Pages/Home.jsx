@@ -4,6 +4,7 @@ import { useState } from "react";
 import Promotion from "../Components/Promotion";
 import Menu from "./Menu";
 import About from "./About";
+import BookTable from "./BookTable";
 
 export default function Home() {
   const descriptions = [
@@ -38,6 +39,7 @@ export default function Home() {
       <Promotion></Promotion>
       <Menu></Menu>
       <About></About>
+      <BookTable></BookTable>
     </div>
   );
 }

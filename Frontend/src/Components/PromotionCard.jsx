@@ -8,7 +8,7 @@ export default function PromotionCard({ title, percentage, image }) {
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-200 hover:scale-125"
+          className="w-full h-full object-cover transition-transform duration-200 hover:scale-110"
         />
       </div>
 

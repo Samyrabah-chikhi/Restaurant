@@ -40,3 +40,7 @@ body {
   fill: red;
   transition: fill 300ms ease-out;
 }
+
+option:hover,option:focus{
+  background-color: #ddd;
+}

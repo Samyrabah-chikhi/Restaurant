@@ -1,7 +1,7 @@
-![CRM GENERAL](assets/Restaurant_1.png)
+![HOME PAGE](assets/Restaurant_1.png)
 
-![CRM GENERAL](assets/Restaurant_2.png)
+![MENU PAGE](assets/Restaurant_2.png)
 
-![CRM GENERAL](assets/Restaurant_3.png)
+![ABOUT PAGE](assets/Restaurant_3.png)
 
-![CRM GENERAL](assets/Restaurant_4.png)
+![BOOKING PAGE](assets/Restaurant_4.png)
